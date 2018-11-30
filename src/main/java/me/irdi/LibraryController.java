@@ -24,7 +24,6 @@ public class LibraryController {
 
     @ResponseStatus(HttpStatus.OK)
     @GetMapping(produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    //@RequestMapping(value = "/", method = RequestMethod.GET)
     public List<Library> getAllBooks() {
         return repository.findAll();
     }

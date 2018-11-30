@@ -6,6 +6,7 @@ import org.springframework.data.annotation.Id;
 
 
 public class Library {
+
     @Id
     public ObjectId _id;
 
@@ -13,6 +14,7 @@ public class Library {
     public String genre;
     public String author;
     public int pages;
+
     // Constructors
     public Library(){}
 

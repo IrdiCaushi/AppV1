@@ -67,14 +67,6 @@ public class AuthorizationFilter extends OncePerRequestFilter {
             HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
             throws ServletException, IOException {
 
-        /* Disabled for the purposes of this exercise
-        if (true) {
-
-            filterChain.doFilter(request, response);
-            return;
-        }
-         end of disabled functionality*/
-
         String authorizationHeader = request.getHeader(HttpHeaders.AUTHORIZATION);
 
         if (authorizationHeader == null) {

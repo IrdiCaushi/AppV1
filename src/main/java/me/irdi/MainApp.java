@@ -1,7 +1,5 @@
 package me.irdi;
 
-import me.irdi.AuthorizationFilter;
-import me.irdi.repositories.LibraryRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -13,14 +11,6 @@ public class MainApp {
     public static void main(String[] args) {
         SpringApplication.run(MainApp.class, args);
     }
-/*
-    @Bean
-    public LibraryRepository getLibraryRepository() {
-
-        return new LibraryRepository() {
-
-        };
-    } */
 
     @Bean
     public FilterRegistrationBean someFilterRegistration() {
